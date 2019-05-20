@@ -1,47 +1,65 @@
 // Hero
-
 .hero-nav {
-    background-image: url(../img/devices.jpg);
-    background-size: cover;
 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/devices.jpg);
+    background-size: cover;
     
     .container {
-        height:80vh;
+        height:60vh;
         min-height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-        border: 2px solid blue;
+        text-align: center;
     }
 
-    .container .tagline-main {
-        flex-basis: 1;
-    }
-
-    .container .search-form {
-        display: flex;
-
-    }
 }
 
-
 // Navigation
-
 .header-nav {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    border: 2px solid red;
-
+    
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
     img {
         width: 4vw;
     }
-
+    
     ul {
         display: flex;
     }
+
 }
 
+// Search
+.hero-nav {
 
+    .search-form {
+        width: 60%;
+        display: flex;
+        margin:0 auto;
+    
+        #sf-what, #sf-location {
+            flex-grow: 2;
+        }
+    }
+
+}
+
+// CTA
+
+.hero-nav {
+
+    .button {
+
+    }
+    
+}

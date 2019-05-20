@@ -12,29 +12,36 @@
     <header class="hero-nav">
         <div class="container">
             <nav class="header-nav">
-                <img src="/img/UMTS.svg" alt="Use My Tech Stuff Logo">
+                <div>
+                    <img src="/img/UMTS.svg" alt="Use My Tech Stuff Logo">
+                    <p>UMTS</p>
+                </div>
                 <ul>
                     <li><a href="#">login</a></li>
                     <li><a href="#" id="registration-link" >register</a></li>
                 </ul>
             </nav>
     
-            <div class="tagline-main">
-                <h1>Share what you love.</h1>
+            <div class="search-block">
+                <h1>Find the stuff you love.</h1>
+                <form class="search-form">
+                    <input type="text" id="sf-what" placeholder="What are you looking for?">
+                    <input type="text" id="sf-location" placeholder="Location">
+                    <select id="sf-distance" name="title">
+                        <option value="" selected>All distances</option>
+                        <option value="1km">1km</option>
+                        <option value="3km">3km</option>
+                        <option value="5km">5km</option>
+                        <option value="10km">10km</option>
+                        <option value="30km">30km</option>
+                        <option value="60km">60km</option>
+                   </select>
+                    <input type="submit" value="Search">
+                </form>
             </div>
-    
-             <form class="search-form">
-                <input type="text" name="what" placeholder="What are you looking for?">
-                <input type="text" name="location" placeholder="Location">
-                <input type="text" name="distance" placeholder="Distance">
-                 <input type="submit" value="Search">
-             </form>
 
-            <div class="tagline-small">
+            <div class="button">
                 <p>Do you want to share something with your neighbors?</p>
-            </div>
-
-            <div class="cta-button">
                 <a href="">Start sharing</a>
             </div>
         </div>
