@@ -186,3 +186,33 @@ a {
 @waterloo: #81848E;
 @border-real: #dee2e6;
 @some-black: #22283A; */
+.hero-nav {
+  background-image: url(../img/devices.jpg);
+  background-size: cover;
+}
+.hero-nav .container {
+  height: 80vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid blue;
+}
+.hero-nav .container .tagline-main {
+  flex-basis: 1;
+}
+.hero-nav .container .search-form {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+}
+.header-nav img {
+  width: 4vw;
+}
+.header-nav ul {
+  display: flex;
+}
