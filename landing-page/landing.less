@@ -1,159 +1,21 @@
-// Hero
-.hero-nav {
+// IN ALL CAPS: GENERAL STYLE
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/devices.jpg);
-    background-size: cover;
+// BUTTON
+.button a {
+    background-color: @blue7;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    border: solid 0.2rem rgba(0, 0, 0, 0);
+    color: @light-primary;
+    font-weight: 600;
     
-    .container {
-        height:70vh;
-        min-height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-    }
-
-}
-
-// Navigation
-.header-nav {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding:2rem;
-    color:@light-primary;
-    
-    div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        p {
-            font-family: @logo-font;
-            font-size: 3rem;
-            font-weight:600;
-            color: @light-primary;
-        }
-    }
-    
-    img {
-        width: 7rem;
-    }
-    
-    ul {
-        display: flex;
-        
-        a {
-            color:@light-primary;
-            
-        }
-        
-        #registration-link {
-            border: 0.2rem solid @light-secondary;
-            border-radius: 0.2rem;
-            padding:0.5rem 1rem;
-            margin-left:1rem;
-
-            &:hover {
-                background-color: @light-secondary;
-            }
-        }
-    }
-
-}
-
-// Search
-.search-block {
-
-    h1 {
-        font-weight: 600;
-        margin-bottom: 6rem;
-        color: @light-primary;
-    }
-
-    .search-form {
-        width: 80%;
-        display: flex;
-        margin:0 auto;
-
-        input {
-            padding:1.7rem;
-            font-size: 1.7rem;
-            color:@pink7;
-            font-weight: 400;
-            
-            &::placeholder {
-                font-style: italic;
-            }
-        }
-
-        #sf-what, #sf-location {
-            flex-grow: 2;
-            border:none;
-            border-right:0.1rem solid @light-secondary;
-        }
-
-        #sf-what {
-            border-radius: 0.5rem 0 0 0.5rem;
-        }
-
-        #sf-distance {
-            background-color:@light-primary;
-            font-family: @text-font;
-            color: @light-secondary;
-            padding: 0 1rem;
-            border:none;
-        }
-
-        #search-button {
-            background-color:@light-secondary;
-            color: @light-primary;
-            border-radius: 0 0.5rem 0.5rem 0;
-            border:none;
-            padding:0 3rem;
-
-            &:hover {
-                background-color: @pink7;
-                cursor: pointer;
-            }
-        }
-    }
-
-}
-
-// CTA
-.hero-nav .button{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-bottom: 5rem;
-
-    p {
-        font-family: @logo-font;
-        font-size: 1.8rem;
-        font-weight:700;
-        color: @light-primary;
-        margin-bottom: 1rem;
-    }
-
-    a {
-        background-color: @blue7;
-        padding: 1rem 2rem;
-        color: @light-primary;
-        border-radius: 0.3rem;
-        
-        &:hover {
-            background-color: @light-primary;
-            color: @light-secondary;
-        }
+    &:hover {
+        background-color: @blue8;
+        border: solid 0.2rem @blue8;
     }
 }
 
-// all sections
+// SECTION
 section {
     margin-bottom: 3rem;
     
@@ -168,85 +30,71 @@ section {
     }
 }
 
-// Galleries
-.heading-title {
-    font-family: @logo-font;
-    font-size: 2rem;
-    font-weight:500;
+// More section
+.more {
+    padding: 0 0 5rem 0; 
 
-    text-align:center;
-    margin: 5rem 0;
-}
-
-.product-gallery {
-    display: flex;
-    flex-direction: row;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-
-    margin: 1rem;
-    width:25%;
-
-    background-color: @white;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12),
-    0 2px 2px 0 rgba(0, 0, 0, 0.24);
-
-    .product-wrap {
-        position: relative;
-        
-        img {
-            max-width:100%;
-            max-height: 100%;
+    .tag {
+        display: inline-flex;
+        flex-flow: row wrap;
     
-            border-radius: 0.5rem 0.5rem 0 0;
+        border: 0.2rem solid @gray7;
+        border-radius: 0.4rem;
+        padding: 1rem 3rem;
+        margin-right: 1rem;
+        margin-bottom: 1.2rem;
+    
+        text-transform: capitalize;
+        font-family: @heading-font;
+        font-weight: 600;
+        color: @gray7;
+    
+        &:hover {
+            background-color: @light-primary;
+            color: @blue7;
+            border: solid 0.2rem @blue7;
         }
-        
-        .seller-wrap {
-            position: absolute;
-            left:2rem;
-            bottom:1rem;
     
+    }
+} 
+
+// Become a Member
+
+.cta-member {
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c3c3c3' fill-opacity='0.5'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 20px;
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        padding: 10rem 0;
+
+        .cta {
+            width:33rem;
+            background-color: @white;
+            padding:3rem;
+            border-radius: 0.5rem;
+
+            h2 {
+                font-size: 2.3rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            .button {
+                margin: 2rem 0;
+                flex-basis: 100%;
+            }
+        }
+
+        .cta-illustration{
+            width: 50rem;
             img {
-                max-width:20%;
-                max-height:20%;
-                border-radius: 90%;
-                border: 0.2rem solid @light-primary;
+                width:100%;
             }
         }
     }
-
-    .product-description {
-        padding:0.7rem;
-
-        p:nth-of-type(2){
-            margin-top:3rem;
-            font-weight:600;
-        }
-    }
-}
-
-.tag {
-    display:inline-flex;
-    flex-flow: row wrap;
-
-    border: 0.2rem solid @gray7;
-    border-radius: 0.4rem;
-    padding: 1rem 3rem;
-    margin-right:1rem;
-    margin-bottom:1.2rem;
-
-    text-transform: capitalize;
-    font-family: @heading-font;
-    font-weight: 600;
-    color: @gray7;
-    
-    &:hover  {
-        color: @blue5;
-        border: 0.2rem solid @blue5;
-    }
-
 }
