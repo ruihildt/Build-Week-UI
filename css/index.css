@@ -287,17 +287,10 @@ a {
   background-color: #f1f3f5;
   color: #e64980;
 }
-.heading-title {
-  font-family: 'Assistant', sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  text-align: center;
-  margin: 5rem 0;
-}
-.gallery {
+section {
   margin-bottom: 3rem;
 }
-.gallery > p {
+section > p {
   margin: 5rem 0 2.5rem 0;
   text-align: center;
   font-family: 'Assistant', sans-serif;
@@ -305,7 +298,14 @@ a {
   font-weight: 600;
   text-transform: uppercase;
 }
-.gallery .product-gallery {
+.heading-title {
+  font-family: 'Assistant', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 5rem 0;
+}
+.product-gallery {
   display: flex;
   flex-direction: row;
 }
@@ -343,4 +343,21 @@ a {
 .card .product-description p:nth-of-type(2) {
   margin-top: 3rem;
   font-weight: 600;
+}
+.tag {
+  display: inline-flex;
+  flex-flow: row wrap;
+  border: 0.2rem solid #495057;
+  border-radius: 0.4rem;
+  padding: 1rem 3rem;
+  margin-right: 1rem;
+  margin-bottom: 1.2rem;
+  text-transform: capitalize;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  color: #495057;
+}
+.tag:hover {
+  color: #339af0;
+  border: 0.2rem solid #339af0;
 }

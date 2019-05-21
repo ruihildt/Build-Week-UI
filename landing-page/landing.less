@@ -153,18 +153,8 @@
     }
 }
 
-// Section
-
-.heading-title {
-    font-family: @logo-font;
-    font-size: 2rem;
-    font-weight:500;
-
-    text-align:center;
-    margin: 5rem 0;
-}
-
-.gallery {
+// all sections
+section {
     margin-bottom: 3rem;
     
     & > p {
@@ -176,13 +166,22 @@
         font-weight:600;
         text-transform: uppercase;
     }
-
-    .product-gallery {
-        display: flex;
-        flex-direction: row;
-    }
 }
 
+// Galleries
+.heading-title {
+    font-family: @logo-font;
+    font-size: 2rem;
+    font-weight:500;
+
+    text-align:center;
+    margin: 5rem 0;
+}
+
+.product-gallery {
+    display: flex;
+    flex-direction: row;
+}
 
 .card {
     display: flex;
@@ -228,4 +227,26 @@
             font-weight:600;
         }
     }
+}
+
+.tag {
+    display:inline-flex;
+    flex-flow: row wrap;
+
+    border: 0.2rem solid @gray7;
+    border-radius: 0.4rem;
+    padding: 1rem 3rem;
+    margin-right:1rem;
+    margin-bottom:1.2rem;
+
+    text-transform: capitalize;
+    font-family: @heading-font;
+    font-weight: 600;
+    color: @gray7;
+    
+    &:hover  {
+        color: @blue5;
+        border: 0.2rem solid @blue5;
+    }
+
 }
