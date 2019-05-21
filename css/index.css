@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Noto Sans', sans-serif;
+  background-color: rgba(255, 240, 246, 0.2);
 }
 h1,
 h2,
@@ -208,14 +209,14 @@ a {
 .header-nav ul a {
   color: #f1f3f5;
 }
-.header-nav ul a:hover {
-  color: #e64980;
-}
 .header-nav ul #registration-link {
   border: 0.2rem solid #e64980;
   border-radius: 0.2rem;
   padding: 0.5rem 1rem;
   margin-left: 1rem;
+}
+.header-nav ul #registration-link:hover {
+  background-color: #e64980;
 }
 .search-block h1 {
   font-weight: 600;
@@ -277,40 +278,69 @@ a {
   margin-bottom: 1rem;
 }
 .hero-nav .button a {
-  background-color: #c2255c;
+  background-color: #1c7ed6;
   padding: 1rem 2rem;
   color: #f1f3f5;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
 }
 .hero-nav .button a:hover {
-  background-color: #a61e4d;
-  color: #f1f3f5;
+  background-color: #f1f3f5;
+  color: #e64980;
 }
-.product-gallery {
+.heading-title {
+  font-family: 'Assistant', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 5rem 0;
+}
+.gallery {
+  margin-bottom: 3rem;
+}
+.gallery > p {
+  margin: 5rem 0 2.5rem 0;
+  text-align: center;
+  font-family: 'Assistant', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.gallery .product-gallery {
   display: flex;
   flex-direction: row;
 }
 .card {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  margin: 1rem;
   width: 25%;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
 }
-.product-wrap {
+.card .product-wrap {
   position: relative;
 }
-.product-wrap img {
+.card .product-wrap img {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
-.product-wrap .seller-wrap {
+.card .product-wrap .seller-wrap {
   position: absolute;
   left: 2rem;
   bottom: 1rem;
 }
-.product-wrap .seller-wrap img {
+.card .product-wrap .seller-wrap img {
   max-width: 20%;
   max-height: 20%;
   border-radius: 90%;
   border: 0.2rem solid #f1f3f5;
+}
+.card .product-description {
+  padding: 0.7rem;
+}
+.card .product-description p:nth-of-type(2) {
+  margin-top: 3rem;
+  font-weight: 600;
 }
