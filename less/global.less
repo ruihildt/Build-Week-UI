@@ -9,8 +9,8 @@ html {
 
 html,
 body {
-    font-family: 'Noto Sans', sans-serif;
-    color: @main-font-color;
+    font-family: @text-font;
+    color: @text-font-color;
 }
 
 h1,
@@ -18,8 +18,8 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Work Sans', sans-serif;
-    color: @header-font-color;
+    font-family: @heading-font;
+    color: @heading-font-color;
 }
 
 h1 {
@@ -45,6 +45,6 @@ a {
 }
 
 .container {
-    width: @container-width;
+    max-width: @container-width;
     margin: 0 auto;
 }
