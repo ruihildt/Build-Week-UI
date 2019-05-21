@@ -17,8 +17,7 @@
 
 // SECTION
 section {
-    margin-bottom: 3rem;
-    
+    // Section title style
     & > p {
         margin: 5rem 0 2.5rem 0;
         text-align: center;
@@ -58,9 +57,9 @@ section {
     }
 } 
 
-// Become a Member
+// SHOWCASE
 
-.cta-member {
+.showcase {
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c3c3c3' fill-opacity='0.5'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-size: 20px;
     
@@ -72,29 +71,55 @@ section {
 
         padding: 10rem 0;
 
-        .cta {
-            width:33rem;
-            background-color: @white;
-            padding:3rem;
-            border-radius: 0.5rem;
+    }
 
-            h2 {
-                font-size: 2.3rem;
-                font-weight: 600;
-                margin-bottom: 1rem;
-            }
+    .cta-description {
+        width:50rem;
+        background-color: @white;
+        padding:3rem;
+        border-radius: 0.5rem;
 
-            .button {
-                margin: 2rem 0;
-                flex-basis: 100%;
-            }
+        h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
         }
 
-        .cta-illustration{
-            width: 50rem;
+        .button {
+            margin: 2rem 0;
+            flex-basis: 100%;
+        }
+    }
+
+    .cta-illustration {
+        width: 50rem;
+        img {
+            width:100%;
+        }
+    }
+}
+
+// App showcase
+
+.apps .container {
+    .cta-illustration{
+            order: 1;
+    }
+
+    .cta-description {
+        order: 2;
+
+        .badges {
+            display: flex;
+            justify-content: flex-start;
+        
+            
             img {
-                width:100%;
+                max-height: 40px;
+                margin-top: 2rem;
+                margin-right: 1rem;
             }
         }
     }
+
 }
