@@ -135,7 +135,6 @@ html {
 html,
 body {
   font-family: 'Noto Sans', sans-serif;
-  color: #f1f3f5;
 }
 h1,
 h2,
@@ -143,7 +142,6 @@ h3,
 h4,
 h5 {
   font-family: 'Assistant', sans-serif;
-  color: #f1f3f5;
 }
 h1 {
   font-size: 4rem;
@@ -163,7 +161,7 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 985px;
+  max-width: 1125px;
   margin: 0 auto;
 }
 /* .heading() {
@@ -222,6 +220,7 @@ a {
 .search-block h1 {
   font-weight: 600;
   margin-bottom: 6rem;
+  color: #f1f3f5;
 }
 .search-block .search-form {
   width: 80%;
@@ -286,4 +285,32 @@ a {
 .hero-nav .button a:hover {
   background-color: #a61e4d;
   color: #f1f3f5;
+}
+.product-gallery {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 25%;
+}
+.product-wrap {
+  position: relative;
+}
+.product-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.product-wrap .seller-wrap {
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+}
+.product-wrap .seller-wrap img {
+  max-width: 20%;
+  max-height: 20%;
+  border-radius: 90%;
+  border: 0.2rem solid #f1f3f5;
 }
