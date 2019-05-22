@@ -181,8 +181,49 @@ footer {
     background-color: @gray7;
     color: @white;
 
-    a {
+    padding:6rem 0;
+
+    a, p {
         color:white;
+        font-size: 2rem;
     }
 }
 
+.links {
+    display: flex;
+    justify-content: space-between;
+
+    a:hover {
+        color:@light-secondary;
+    }
+
+    ul li{
+        margin-bottom:1rem;
+    }
+
+    h2, p {
+        margin-bottom: 2rem;
+    }
+
+    #about, #contact, #social {
+        flex-basis: 1;
+    }
+
+    #more {
+        flex-basis: 2;
+    }
+
+    #social img {
+        width:15rem;
+    }
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    margin-top:4rem;
+
+    img {
+        width:10rem;
+    }
+}

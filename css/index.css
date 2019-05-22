@@ -298,9 +298,45 @@ section > p {
 footer {
   background-color: #495057;
   color: white;
+  padding: 6rem 0;
 }
-footer a {
+footer a,
+footer p {
   color: white;
+  font-size: 2rem;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+.links a:hover {
+  color: #e64980;
+}
+.links ul li {
+  margin-bottom: 1rem;
+}
+.links h2,
+.links p {
+  margin-bottom: 2rem;
+}
+.links #about,
+.links #contact,
+.links #social {
+  flex-basis: 1;
+}
+.links #more {
+  flex-basis: 2;
+}
+.links #social img {
+  width: 15rem;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+.copyright img {
+  width: 10rem;
 }
 .hero-nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/devices.jpg);
