@@ -16,4 +16,4 @@ Bypass the middleman and rent from a real person!
 - [ ]  For a second page, you could do an about us section that includes images of the members, and links to one another's socials/Github.
 
 ## Website status
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b2bb982f-8565-4bcd-aed1-bf8f639deb4c/deploy-status)](https://app.netlify.com/sites/umts/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b2bb982f-8565-4bcd-aed1-bf8f639deb4c/deploy-status)](https://umts.ruihildt.xyz/)
