@@ -28,9 +28,10 @@
     display: flex;
     flex-direction: column;
 
-    .texts div {
+    .testimonials-texts div {
         background-color: @light-primary;
         padding:2rem;
+        border-bottom: 0.3rem solid @blue5;
 
         .name, .city {
             display: inline;
@@ -45,13 +46,35 @@
         }
     }
 
-    .texts div:not(:first-child) {
+    .testimonials-text {
             display: none;
+            &.testimonials-text-selected {
+                display:block;
+            }
+
+            p {
+                min-height: 66px;
+            }
         }
 
-    .pictures {
+
+    .testimonials-links {
         display: flex;
-        margin-top:3rem;
+        margin-top:2rem;
+
+        .testimonials-link {
+
+            img {
+                border: 0.3rem transparent solid;
+            }
+
+            &.testimonials-link-selected {
+
+                img {
+                    border:0.3rem @blue5 solid;
+                }
+            }
+        }
 
         img {
             width: 90%;

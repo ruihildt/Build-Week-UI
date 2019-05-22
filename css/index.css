@@ -609,28 +609,41 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-.testimonials .texts div {
+.testimonials .testimonials-texts div {
   background-color: #f1f3f5;
   padding: 2rem;
+  border-bottom: 0.3rem solid #339af0;
 }
-.testimonials .texts div .name,
-.testimonials .texts div .city {
+.testimonials .testimonials-texts div .name,
+.testimonials .testimonials-texts div .city {
   display: inline;
 }
-.testimonials .texts div .name:after {
+.testimonials .testimonials-texts div .name:after {
   content: ',';
 }
-.testimonials .texts div p:first-child {
+.testimonials .testimonials-texts div p:first-child {
   margin-bottom: 2rem;
 }
-.testimonials .texts div:not(:first-child) {
+.testimonials .testimonials-text {
   display: none;
 }
-.testimonials .pictures {
-  display: flex;
-  margin-top: 3rem;
+.testimonials .testimonials-text.testimonials-text-selected {
+  display: block;
 }
-.testimonials .pictures img {
+.testimonials .testimonials-text p {
+  min-height: 66px;
+}
+.testimonials .testimonials-links {
+  display: flex;
+  margin-top: 2rem;
+}
+.testimonials .testimonials-links .testimonials-link img {
+  border: 0.3rem transparent solid;
+}
+.testimonials .testimonials-links .testimonials-link.testimonials-link-selected img {
+  border: 0.3rem #339af0 solid;
+}
+.testimonials .testimonials-links img {
   width: 90%;
   border-radius: 90%;
 }
