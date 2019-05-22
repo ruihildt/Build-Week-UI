@@ -11,6 +11,10 @@
 .product-gallery {
     display: flex;
     flex-direction: row;
+
+    @media @mobile {
+        flex-flow: row wrap;
+    }
 }
 
 .card {
@@ -19,6 +23,10 @@
 
     margin: 1rem;
     width: 25%;
+
+    @media @mobile {
+        width: 45%;
+    }
 
     background-color: @white;
     border-radius: 0.5rem;

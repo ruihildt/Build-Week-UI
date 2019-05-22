@@ -162,7 +162,7 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 1125px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 /* .heading() {
@@ -222,11 +222,23 @@ section > p {
   justify-content: space-evenly;
   padding: 10rem 0;
 }
+@media (max-width: 500px) {
+  .showcase .container {
+    flex-direction: column;
+    padding: 3rem;
+  }
+}
 .showcase .cta-description {
-  width: 50rem;
+  width: 40rem;
   background-color: white;
   padding: 3rem;
   border-radius: 0.5rem;
+}
+@media (max-width: 500px) {
+  .showcase .cta-description {
+    width: 100vw;
+    border-radius: none;
+  }
 }
 .showcase .cta-description h2 {
   font-size: 3rem;
@@ -243,6 +255,14 @@ section > p {
 .showcase .cta-illustration img {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .join .container .cta-illustration {
+    order: 1;
+  }
+  .join .container .cta-description {
+    order: 2;
+  }
+}
 .apps .cta-illustration {
   order: 1;
 }
@@ -253,6 +273,11 @@ section > p {
   display: flex;
   justify-content: flex-start;
 }
+@media (max-width: 500px) {
+  .apps .cta-description .badges {
+    justify-content: space-around;
+  }
+}
 .apps .cta-description img {
   max-height: 40px;
   margin-top: 2rem;
@@ -262,18 +287,40 @@ section > p {
   text-align: center;
   margin: 10rem auto;
 }
+@media (max-width: 500px) {
+  .why {
+    margin: 4rem 0;
+  }
+}
 .why > img {
   width: 12rem;
 }
 .why h1 {
   margin: 10rem 0;
 }
+@media (max-width: 500px) {
+  .why h1 {
+    margin: 6rem 0;
+  }
+}
 .claims {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .claims {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .claims > div {
   width: 30%;
+}
+@media (max-width: 500px) {
+  .claims > div {
+    width: 100%;
+    padding: 0 14vw 10vw 14vw;
+  }
 }
 .claims img {
   width: 100%;
@@ -289,16 +336,23 @@ section > p {
 }
 .press .logos {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
 }
 .press .logos img {
-  margin: 0 2rem;
+  padding: 2rem;
+  max-width: 15rem;
 }
 footer {
   background-color: #495057;
   color: white;
   padding: 6rem 0;
+}
+@media (max-width: 500px) {
+  footer {
+    padding: 6rem 3rem;
+  }
 }
 footer a,
 footer p {
@@ -308,6 +362,14 @@ footer p {
 .links {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .links {
+    flex-direction: column;
+  }
+  .links > div {
+    margin-bottom: 3rem;
+  }
 }
 .links a:hover {
   color: #e64980;
@@ -337,6 +399,7 @@ footer p {
 }
 .copyright img {
   width: 10rem;
+  margin-right: 2rem;
 }
 .hero-nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/devices.jpg);
@@ -393,6 +456,11 @@ footer p {
   color: #f1f3f5;
   margin-bottom: 6vh;
 }
+@media (max-width: 500px) {
+  .search-block h1 {
+    font-size: 3rem;
+  }
+}
 .search-block .search-form {
   width: 80%;
   display: flex;
@@ -416,6 +484,11 @@ footer p {
 .search-block .search-form #sf-what {
   border-radius: 0.5rem 0 0 0.5rem;
 }
+@media (max-width: 500px) {
+  .search-block .search-form #sf-location {
+    display: none;
+  }
+}
 .search-block .search-form #sf-distance {
   background-color: #f1f3f5;
   font-family: 'Noto Sans', sans-serif;
@@ -423,6 +496,11 @@ footer p {
   padding: 0 1rem;
   border: none;
   width: 9rem;
+}
+@media (max-width: 500px) {
+  .search-block .search-form #sf-distance {
+    display: none;
+  }
 }
 .search-block .search-form #search-button {
   background-color: #e64980;
@@ -458,6 +536,11 @@ footer p {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .product-gallery {
+    flex-flow: row wrap;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -466,6 +549,11 @@ footer p {
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+@media (max-width: 500px) {
+  .card {
+    width: 45%;
+  }
 }
 .card .product-wrap {
   position: relative;
@@ -501,8 +589,20 @@ footer p {
   justify-content: space-between;
   padding: 15rem 0;
 }
+@media (max-width: 500px) {
+  .social-proof .container {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+}
 .social-proof .container > div {
   width: 48%;
+}
+@media (max-width: 500px) {
+  .social-proof .container > div {
+    width: 100%;
+    padding: 2rem;
+  }
 }
 .testimonials {
   position: relative;

@@ -74,6 +74,10 @@
         font-weight: 600;
         color: @light-primary;
         margin-bottom: 6vh;
+
+        @media @mobile {
+            font-size:@heading1-mobile-fs;
+        }
     }
 
     .search-form {
@@ -97,12 +101,19 @@
             flex-grow: 2;
             border: none;
             border-right: 0.1rem solid @light-secondary;
-        }
 
+        }
+        
         #sf-what {
             border-radius: 0.5rem 0 0 0.5rem;
         }
 
+        #sf-location {
+            @media @mobile {
+                display: none;
+            }
+        }
+        
         #sf-distance {
             background-color: @light-primary;
             font-family: @text-font;
@@ -110,6 +121,10 @@
             padding: 0 1rem;
             border: none;
             width: 9rem;
+
+            @media @mobile {
+                display: none;
+            }
         }
 
         #search-button {

@@ -68,16 +68,24 @@ section {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-
         padding: 10rem 0;
 
+        @media @mobile {
+            flex-direction: column;
+            padding:3rem;
+        }
     }
 
     .cta-description {
-        width:50rem;
+        width:40rem;
         background-color: @white;
         padding:3rem;
         border-radius: 0.5rem;
+
+        @media @mobile {
+            width: 100vw;
+            border-radius: none;
+        }
 
         h2 {
             font-size: 3rem;
@@ -99,11 +107,26 @@ section {
     }
 }
 
+// Join showcase
+
+.join .container{
+    @media @mobile {
+        .cta-illustration {
+            order:1;
+        }
+
+        .cta-description {
+            order: 2;
+        }
+    }
+}
+
 // App showcase
 
 .apps {
+
     .cta-illustration {
-            order: 1;
+        order: 1;
     }
 
     .cta-description {
@@ -112,8 +135,11 @@ section {
         .badges {
             display: flex;
             justify-content: flex-start;
+
+            @media @mobile {
+                justify-content: space-around;
+            }
         }
-        
         
         img {
             max-height: 40px;
@@ -130,21 +156,40 @@ section {
     text-align: center;
     margin: 10rem auto;
 
+    @media @mobile {
+        margin:4rem 0;
+    }
+
     & > img {
         width:12rem;
     }
 
     h1 {
         margin:10rem 0;
+
+    @media @mobile {
+        margin: 6rem 0;
+    }
     }
 }
 
 .claims {
     display: flex;
     justify-content: space-between;
+    
+    @media @mobile {
+        width:100%;
+        flex-direction: column;
+    }
 
     & > div {
         width: 30%;
+
+        @media @mobile {
+            width: 100%;
+            padding:0 14vw 10vw 14vw;
+        }
+
     }
 
     img {
@@ -166,11 +211,13 @@ section {
 
     .logos {
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
 
         img {
-            margin:0 2rem;
+            padding:2rem;
+            max-width: 15rem;
         }
     }
 }
@@ -183,6 +230,10 @@ footer {
 
     padding:6rem 0;
 
+    @media @mobile {
+        padding: 6rem 3rem;
+    }
+
     a, p {
         color:white;
         font-size: 2rem;
@@ -192,6 +243,14 @@ footer {
 .links {
     display: flex;
     justify-content: space-between;
+
+    @media @mobile {
+        flex-direction: column;
+
+        & > div {
+            margin-bottom: 3rem;
+        }
+    }
 
     a:hover {
         color:@light-secondary;
@@ -225,5 +284,6 @@ footer {
 
     img {
         width:10rem;
+        margin-right: 2rem;
     }
 }
