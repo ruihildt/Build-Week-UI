@@ -272,8 +272,25 @@ section > p {
   display: flex;
   justify-content: space-between;
 }
-.claims div {
+.claims > div {
   width: 30%;
+}
+.claims img {
+  width: 100%;
+  height: 100%;
+}
+.press {
+  text-align: center;
+  background-color: #f1f3f5;
+  padding: 10rem 0;
+}
+.press h2 {
+  margin-bottom: 5rem;
+}
+.press .logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .hero-nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/devices.jpg);
