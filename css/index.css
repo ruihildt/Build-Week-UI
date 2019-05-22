@@ -258,6 +258,23 @@ section > p {
   margin-top: 2rem;
   margin-right: 1rem;
 }
+.why {
+  text-align: center;
+  margin: 10rem auto;
+}
+.why > img {
+  width: 12rem;
+}
+.why h1 {
+  margin: 10rem 0;
+}
+.claims {
+  display: flex;
+  justify-content: space-between;
+}
+.claims div {
+  width: 30%;
+}
 .hero-nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/devices.jpg);
   background-size: cover;
@@ -414,12 +431,14 @@ section > p {
   font-weight: 600;
 }
 .social-proof {
-  display: flex;
-  justify-content: space-between;
-  margin: 15rem auto;
   background-color: white;
 }
-.social-proof > div {
+.social-proof .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15rem 0;
+}
+.social-proof .container > div {
   width: 48%;
 }
 .testimonials {
