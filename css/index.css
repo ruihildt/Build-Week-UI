@@ -416,15 +416,37 @@ section > p {
 .social-proof {
   display: flex;
   justify-content: space-between;
+  margin: 15rem auto;
+  background-color: white;
 }
 .social-proof > div {
   width: 48%;
+}
+.testimonials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.testimonials .texts div {
+  background-color: #f1f3f5;
+  padding: 2rem;
+}
+.testimonials .texts div .name,
+.testimonials .texts div .city {
+  display: inline;
+}
+.testimonials .texts div .name:after {
+  content: ',';
+}
+.testimonials .texts div p:first-child {
+  margin-bottom: 2rem;
 }
 .testimonials .texts div:not(:first-child) {
   display: none;
 }
 .testimonials .pictures {
   display: flex;
+  margin-top: 3rem;
 }
 .testimonials .pictures img {
   width: 90%;

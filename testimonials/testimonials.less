@@ -2,18 +2,43 @@
     display: flex;
     justify-content: space-between;
 
+    margin:15rem auto;
+    background-color: @white;
+
     & > div {
         width: 48%;
     }
 }
 
 .testimonials {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .texts div {
+        background-color: @light-primary;
+        padding:2rem;
+
+        .name, .city {
+            display: inline;
+        }
+
+        .name:after {
+            content:',';
+        }
+
+        p:first-child {
+            margin-bottom: 2rem;
+        }
+    }
+
     .texts div:not(:first-child) {
             display: none;
         }
 
     .pictures {
         display: flex;
+        margin-top:3rem;
 
         img {
             width: 90%;
