@@ -292,6 +292,16 @@ section > p {
   justify-content: space-around;
   align-items: center;
 }
+.press .logos img {
+  margin: 0 2rem;
+}
+footer {
+  background-color: #495057;
+  color: white;
+}
+footer a {
+  color: white;
+}
 .hero-nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/devices.jpg);
   background-size: cover;
