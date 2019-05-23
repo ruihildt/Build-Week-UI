@@ -187,6 +187,19 @@ a {
 .about-content {
   margin: 6rem 0;
 }
+h1 {
+  margin-bottom: 2rem;
+}
+p {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+a {
+  color: #d6336c;
+}
+a:hover {
+  color: #c2255c;
+}
 .presentation {
   display: flex;
   justify-content: space-around;
@@ -195,21 +208,22 @@ a {
 .presentation .about {
   width: 40%;
 }
-.presentation h1 {
-  margin-bottom: 2rem;
-}
 .presentation .neighbours {
   width: 50%;
 }
 .presentation .neighbours img {
   width: 100%;
 }
+.team {
+  padding: 5rem 0;
+}
 .members {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .members .member {
   text-align: center;
+  padding: 4rem;
 }
 .members .member img {
   width: 20rem;

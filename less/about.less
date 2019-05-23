@@ -6,7 +6,7 @@
     #registration-link {
         border: 0.2rem solid transparent;
         background-color: @light-secondary;
-
+        
         &:hover {
             background-color: @pink7 !important;
         }
@@ -16,6 +16,23 @@
 // Main Content
 .about-content {
     margin:6rem 0;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+p {
+    font-weight: 600;
+    margin:1rem 0;
+}
+
+a {
+    color: @pink7;
+
+    &:hover {
+        color: @pink8;
+    }
 }
 
 // About section
@@ -28,9 +45,6 @@
         width: 40%;
     }
 
-    h1 {
-        margin-bottom: 2rem;
-    }
 
     .neighbours {
         width:50%;
@@ -42,17 +56,24 @@
 
 // The team
 
+.team {
+    padding: 5rem 0;
+}
+
 .members {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     .member {
         text-align: center;
+
+        padding:4rem;
 
         img {
             width:20rem;
             border-radius: 90%;
         }
+
     }
 }
 
