@@ -41,13 +41,30 @@ a {
     justify-content: space-around;
     align-items: center;
 
+    @media @mobile {
+        flex-direction: column;
+        margin: 0 3rem;
+    }
+
     .about {
         width: 40%;
+
+        @media @mobile {
+            width: 100%;
+        }
+
+        p {
+            margin-bottom: 5rem;
+        }
     }
 
 
     .neighbours {
         width:50%;
+        @media @mobile {
+            width: 100%;
+        }
+
         img {
             width: 100%;
         }
@@ -70,7 +87,7 @@ a {
         padding:4rem;
 
         img {
-            width:20rem;
+            width:15rem;
             border-radius: 90%;
         }
 

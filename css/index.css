@@ -205,11 +205,30 @@ a:hover {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .presentation {
+    flex-direction: column;
+    margin: 0 3rem;
+  }
+}
 .presentation .about {
   width: 40%;
 }
+@media (max-width: 500px) {
+  .presentation .about {
+    width: 100%;
+  }
+}
+.presentation .about p {
+  margin-bottom: 5rem;
+}
 .presentation .neighbours {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .presentation .neighbours {
+    width: 100%;
+  }
 }
 .presentation .neighbours img {
   width: 100%;
@@ -226,7 +245,7 @@ a:hover {
   padding: 4rem;
 }
 .members .member img {
-  width: 20rem;
+  width: 15rem;
   border-radius: 90%;
 }
 .contact {
