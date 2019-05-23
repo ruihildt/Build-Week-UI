@@ -20,7 +20,7 @@ function filterTech() {
    
          if(p.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
             // console.log(true)
-            titles[i].style.display = '';
+            titles[i].parentNode.parentNode.style.display = '';
         } else {
             titles[i].parentNode.parentNode.style.display = 'none';
             // console.log(false);
