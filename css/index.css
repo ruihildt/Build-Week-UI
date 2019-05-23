@@ -175,11 +175,6 @@ a:hover {
   max-width: 1000px;
   margin: 0 auto;
 }
-/* .heading() {
-    font-family: @heading-font;
-    color:@heading-font-color;
-    font-weight: 900;
-} */
 .about-header {
   background-color: #1c7ed6;
 }
