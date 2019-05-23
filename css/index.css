@@ -429,7 +429,8 @@ footer {
 footer a,
 footer p {
   color: white;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 .links {
   display: flex;
@@ -452,6 +453,9 @@ footer p {
 .links h2,
 .links p {
   margin-bottom: 2rem;
+}
+.links h2 {
+  color: #e64980;
 }
 .links #about,
 .links #contact,
@@ -705,6 +709,7 @@ footer p {
 .testimonials .testimonials-texts div .name,
 .testimonials .testimonials-texts div .city {
   display: inline;
+  font-weight: 600;
 }
 .testimonials .testimonials-texts div .name:after {
   content: ',';
