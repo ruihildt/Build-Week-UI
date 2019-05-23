@@ -598,6 +598,11 @@ footer p {
   border: none;
   padding: 0 3rem;
 }
+@media (max-width: 500px) {
+  .search-block .search-form #search-button {
+    padding: 0 1.5rem;
+  }
+}
 .search-block .search-form #search-button:hover {
   background-color: #d6336c;
   cursor: pointer;
