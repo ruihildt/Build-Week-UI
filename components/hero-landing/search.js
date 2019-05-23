@@ -1,11 +1,11 @@
-// Get What input element
+// Get Search input element
 let filterInput = document.getElementById('sf-what');
 
 // Add event listener
 filterInput.addEventListener('keyup', filterTech);
 
 function filterTech() {
-    // Get value of input
+    // Get value of input and add uppercase
     let filterValue = document.getElementById('sf-what').value.toUpperCase();
     // console.log(filterValue);
 
@@ -16,9 +16,9 @@ function filterTech() {
     
     for (let i = 0; i < titles.length;i++) {
         let p = titles[i];
-        // If match
-   
-         if(p.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
+
+        // Hide/Show cards according to input match
+         if(p.innerText.toUpperCase().indexOf(filterValue) > -1) {
             // console.log(true)
             titles[i].parentNode.parentNode.classList.remove('hide-card');
         } else {
