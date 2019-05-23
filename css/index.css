@@ -145,10 +145,14 @@ h5 {
   font-family: 'Assistant', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 h3 {
   font-size: 2.8rem;
@@ -170,6 +174,50 @@ a {
     color:@heading-font-color;
     font-weight: 900;
 } */
+.about-header {
+  background-color: #1c7ed6;
+}
+.about-header #registration-link {
+  border: 0.2rem solid transparent;
+  background-color: #e64980;
+}
+.about-header #registration-link:hover {
+  background-color: #d6336c !important;
+}
+.about-content {
+  margin: 6rem 0;
+}
+.presentation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.presentation .about {
+  width: 40%;
+}
+.presentation h1 {
+  margin-bottom: 2rem;
+}
+.presentation .neighbours {
+  width: 50%;
+}
+.presentation .neighbours img {
+  width: 100%;
+}
+.members {
+  display: flex;
+  justify-content: space-around;
+}
+.members .member {
+  text-align: center;
+}
+.members .member img {
+  width: 20rem;
+  border-radius: 90%;
+}
+.contact {
+  text-align: center;
+}
 .button a {
   background-color: #1c7ed6;
   padding: 1rem 2rem;
@@ -182,13 +230,13 @@ a {
   background-color: #1971c2;
   border: solid 0.2rem #1971c2;
 }
-section > p {
+section > h2 {
   margin: 5rem 0 2.5rem 0;
   text-align: center;
-  font-family: 'Assistant', sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
+}
+section > h1 {
+  margin: 5rem 0 2.5rem 0;
+  text-align: center;
 }
 .more {
   padding: 0 0 5rem 0;
@@ -241,8 +289,6 @@ section > p {
   }
 }
 .showcase .cta-description h2 {
-  font-size: 3rem;
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 .showcase .cta-description .button {
@@ -441,12 +487,12 @@ footer p {
 }
 .header-nav ul a {
   color: #f1f3f5;
+  margin-left: 1rem;
 }
 .header-nav ul #registration-link {
   border: 0.2rem solid #e64980;
   border-radius: 0.2rem;
   padding: 0.5rem 1rem;
-  margin-left: 1rem;
 }
 .header-nav ul #registration-link:hover {
   background-color: #e64980;
@@ -639,6 +685,9 @@ footer p {
 }
 .testimonials .testimonials-links .testimonials-link img {
   border: 0.3rem transparent solid;
+}
+.testimonials .testimonials-links .testimonials-link img:hover {
+  cursor: pointer;
 }
 .testimonials .testimonials-links .testimonials-link.testimonials-link-selected img {
   border: 0.3rem #339af0 solid;
