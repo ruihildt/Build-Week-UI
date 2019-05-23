@@ -10,11 +10,7 @@
 
 .product-gallery {
     display: flex;
-    flex-direction: row;
-
-    @media @mobile {
-        flex-flow: row wrap;
-    }
+    flex-flow: row wrap;
 }
 
 .card {
@@ -22,7 +18,7 @@
     flex-direction: column;
 
     margin: 1rem;
-    width: 25%;
+    width: 23%;
 
     @media @mobile {
         width: 45%;
@@ -65,4 +61,10 @@
             font-weight: 600;
         }
     }
+}
+
+// Class to hide card on filter search
+
+.hide-card {
+    display:none;
 }

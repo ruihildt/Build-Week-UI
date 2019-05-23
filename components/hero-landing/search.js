@@ -9,10 +9,10 @@ function filterTech() {
     let filterValue = document.getElementById('sf-what').value.toUpperCase();
     // console.log(filterValue);
 
-    // get all titles
-    let titles = document.querySelectorAll('.product-description p:nth-of-type(1)');
+    // get all Popular Products titles
+    let titles = document.querySelectorAll('.popular .product-description p:nth-of-type(1)');
 
-    console.log(titles);
+    // console.log(titles);
     
     for (let i = 0; i < titles.length;i++) {
         let p = titles[i];
@@ -20,9 +20,9 @@ function filterTech() {
    
          if(p.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
             // console.log(true)
-            titles[i].parentNode.parentNode.style.display = '';
+            titles[i].parentNode.parentNode.classList.remove('hide-card');
         } else {
-            titles[i].parentNode.parentNode.style.display = 'none';
+            titles[i].parentNode.parentNode.classList.add('hide-card');
             // console.log(false);
         }
     }
