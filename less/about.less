@@ -1,0 +1,86 @@
+// Override default nav style
+
+.about-header {
+    background-color:@blue7;
+
+    #registration-link {
+        border: 0.2rem solid transparent;
+        background-color: @light-secondary;
+        
+        &:hover {
+            background-color: @pink7 !important;
+        }
+    }
+}
+
+// Main Content
+.about-content {
+    margin:6rem 0;
+}
+
+
+
+// About section
+.presentation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media @mobile {
+        flex-direction: column;
+        margin: 0 3rem;
+    }
+
+    .about {
+        width: 40%;
+
+        @media @mobile {
+            width: 100%;
+        }
+
+        p {
+            margin-bottom: 5rem;
+        }
+    }
+
+
+    .neighbours {
+        width:50%;
+        @media @mobile {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// The team
+
+.team {
+    padding: 5rem 0;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+
+    .member {
+        text-align: center;
+
+        padding:4rem;
+
+        img {
+            width:15rem;
+            border-radius: 90%;
+        }
+
+    }
+}
+
+// Contact
+
+.contact {
+    text-align: center;
+}

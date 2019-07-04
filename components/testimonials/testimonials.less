@@ -1,0 +1,89 @@
+.social-proof {
+    background-color: @white;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 15rem 0;
+        
+        @media @mobile {
+            flex-direction: column;
+            padding:2rem 0;
+        }
+
+        & > div {
+            width: 48%;
+
+            @media @mobile {
+                width:100%;
+                padding:2rem;
+
+            }
+        }
+    }
+}
+
+.testimonials {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .testimonials-texts div {
+        background-color: @light-primary;
+        padding:2rem;
+        border-bottom: 0.3rem solid @blue5;
+
+        .name, .city {
+            display: inline;
+            font-weight: 600;
+        }
+
+        .name:after {
+            content:',';
+        }
+
+        p:first-child {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .testimonials-text {
+            display: none;
+            &.testimonials-text-selected {
+                display:block;
+            }
+
+            p {
+                min-height: 70px;
+            }
+        }
+
+
+    .testimonials-links {
+        display: flex;
+        margin-top:2rem;
+
+        .testimonials-link {
+
+            
+            img {
+                border: 0.3rem transparent solid;
+                    &:hover{
+                        cursor: pointer;
+                    }
+            }
+
+            &.testimonials-link-selected {
+
+                img {
+                    border:0.3rem @blue5 solid;
+                }
+            }
+        }
+
+        img {
+            width: 90%;
+            border-radius: 90%;
+        }
+    }
+}

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UMTS | Use My Tech Stuff</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Noto+Sans|Work+Sans&display=swap">
+</head>
+
+<body>
+    <script defer="defer" src="/components/testimonials/testimonials.js"></script>
+    <script defer="defer" src="/components/hero-landing/search.js"></script>
+    
+    <header class="hero-nav">
+        <div class="container">
+            <nav class="header-nav">
+                <div>
+                    <a href="/"><img src="/img/UMTS-White.svg" alt="Use My Tech Stuff Logo"></a>
+                    <a href="/"><p>UMTS</p></a>
+                </div>
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#" id="registration-link">Register</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-block">
+                <h1>High Tech At Low Price</h1>
+                <h2>Find out what you can rent & borrow in your area!</h2>
+                <form class="search-form">
+                    <input type="text" id="sf-what" placeholder="Type to search in Popular Products">
+                    <!-- <input type="text" id="sf-location" placeholder="Location"> -->
+                    <select id="sf-distance" name="title">
+                        <option value="distance" selected>Distance</option>
+                        <option value="1km">1km</option>
+                        <option value="3km">3km</option>
+                        <option value="5km">5km</option>
+                        <option value="10km">10km</option>
+                        <option value="30km">30km</option>
+                        <option value="60km">60km</option>
+                   </select>
+                    <input type="submit" value="Search" id="search-button">
+                </form>
+            </div>
+
+            <div class="button">
+                <p>Do you want to share something with your neighbours?</p>
+                <a href="">Start sharing</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery popular container">
+            <h2>Popular products</h2>
+            <div class="product-gallery">
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/camera-pro.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-1.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Professional Movie Camera</p>
+                        <p>120€</p>
+                        <p>120€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/hololens.jpeg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-3.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Holo Lens 2</p>
+                        <p>50€</p>
+                        <p>120€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/quantic.jpeg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-2.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Quantic computer</p>
+                        <p>300€</p>
+                        <p>160€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/dslr.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="/img/product-gallery/people-3.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Photo Camera DSLR</p>
+                        <p>20€</p>
+                        <p>20€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/oculus.jpeg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-4.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Oculus rift</p>
+                        <p>80€</p>
+                        <p>40€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/extensiometer.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-1.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>High-Res Optical Extensometers</p>
+                        <p>150€</p>
+                        <p>100€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/photography-lights.jpeg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-3.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Studio Lightings</p>
+                        <p>120€</p>
+                        <p>120€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/CNC-milling.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-3.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>CNC milling machine</p>
+                        <p>300€</p>
+                        <p>120€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/VR-kit.jpeg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-2.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>VR Full Kit</p>
+                        <p>60€</p>
+                        <p>20€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/robot-dog.jpeg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-4.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Robot Dog</p>
+                        <p>20€</p>
+                        <p>10€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/sound-mixer.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="/img/product-gallery/people-2.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Sound Mixing</p>
+                        <p>25€</p>
+                        <p>25€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/sound-pad.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="/img/product-gallery/people-4.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Sound Pad Pro</p>
+                        <p>15€</p>
+                        <p>15€ / extra day</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="gallery image container">
+            <h2>Image</h2>
+            <div class="product-gallery">
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/camera-pro.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="/img/product-gallery/people-1.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Professional Movie Camera</p>
+                        <p>120€</p>
+                        <p>120€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="img/product-gallery/dslr.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-3.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Photo Camera DSLR</p>
+                        <p>20€</p>
+                        <p>20€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/photography-lights.jpeg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-3.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Studio Lightings</p>
+                        <p>120€</p>
+                        <p>120€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="img/product-gallery/sound-pad.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-4.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Sound Pad Pro</p>
+                        <p>15€</p>
+                        <p>15€ / extra day</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="gallery industrial container">
+            <h2>industrial</h2>
+            <div class="product-gallery">
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/CNC-milling.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-3.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>CNC milling machine</p>
+                        <p>300€</p>
+                        <p>120€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/extensiometer.jpg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-1.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>High-Res Optical Extensometers</p>
+                        <p>150€</p>
+                        <p>100€ / extra day</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="product-wrap">
+                        <img src="/img/product-gallery/products/quantic.jpeg" alt="" class="product-img">
+                        <div class="seller-wrap">
+                            <img src="img/product-gallery/people-2.jpeg" alt="" class="seller-img">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Quantic computer</p>
+                        <p>300€</p>
+                        <p>160€ / extra day</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="more container">
+            <h2>More Categories</h2>
+            <div>
+                <a href="#" class="tag">aeronautic</a>
+                <a href="#" class="tag">optical machines</a>
+                <a href="#" class="tag">light</a>
+                <a href="#" class="tag">specialized computers</a>
+                <a href="#" class="tag">gaming</a>
+                <a href="#" class="tag">AR/VR</a>
+                <a href="#" class="tag">Studio</a>
+                <a href="#" class="tag">robots</a>
+            </div>
+        </section>
+
+        <section class="showcase join">
+            <div class="container">
+                <div class="cta-description">
+                    <h2>Handy, durable & social</h2>
+                    <p>We don't use 80% of our stuff more than once a month. Why should you buy if you can also rent or borrow from your neighbours via UMTS?</p>
+                    <p>These also have the greatest impact on the environment. By sharing, less needs to be produced, which reduces CO2 emissions.</p>
+                    <div class="button">
+                        <a href="">Become a member</a>
+                    </div>
+                </div>
+
+                <div class="cta-illustration">
+                    <img src="/img/cta-illustration-1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase apps">
+            <div class="container">
+                <div class="cta-description">
+                    <h2>Easy, also via the app!</h2>
+                    <p>You never know when you need something, but with the UMTS app you always have a
+                        solution at hand!</p>
+                     <div class="badges">
+                         <a href="#">
+                            <img src="/img/badge-apple-appstore.svg" alt="">
+                         </a>
+                         <a href="#">
+                            <img src="/img/badge-google-play.png" alt="">
+                         </a>
+                     </div>
+                </div>
+                    
+                <div class="cta-illustration">
+                        <img src="/img/app-mockup.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="social-proof">
+            <div class=" container">
+                <div class="intro">
+                    <h2>Better a neighbour than a distant friend!</h2>
+                    <p>Of course we can write a nice story, but you'd rather hear it from your neighbours. More than 1000,000 neighbours have preceded you throughout the world!</p>
+                </div>
+    
+                <div class="testimonials">
+                    <div class="testimonials-texts" >
+                        <div class="testimonials-text testimonials-text-selected" data-tab="1">
+                            <p>A professional DSLR found within 30 minutes at 800m distance. Not bad for my first call.</p>
+                            <p class="name">Iris</p>
+                            <p class="city">New York</p>
+                        </div>
+                        
+                        <div class="testimonials-text" data-tab="2">
+                            <p>It's ideal for me as an expat in a new country! I have all the gear at my disposal
+                                    right away.</p>
+                            <p class="name">Ahmed</p>
+                            <p class="city">Denver</p>
+                        </div>
+                        
+                        <div class="testimonials-text" data-tab="3">
+                            <p>Even if it's only fleeting or one-off, such an exchange with a neighbour on UMTS always has something special!</p>
+                            <p class="name">Silvia</p>
+                            <p class="city">Singapore</p>
+                        </div>
+                        
+                        <div class="testimonials-text" data-tab="4">
+                            <p>I often rent out my turntables, so I'm often invited to the party as a reward!</p>
+                            <p class="name">Jack</p>
+                            <p class="city">London</p>
+                        </div>
+                        
+                        <div class="testimonials-text" data-tab="5">
+                            <p>It makes me feel better if I can help people with my stuff. So in the end  also help myself.</p>
+                            <p class="name">Sophia</p>
+                            <p class="city">Sao Paulo</p>
+                        </div>
+                        
+                        <div class="testimonials-text" data-tab="6">
+                           <p>I have been able to borrow so much from UMTS for my recording and I am so grateful for that. I finally thanked my neighbours by inviting them to my release party!</p>
+                           <p class="name">Raphael</p>
+                           <p class="city">Barcelona</p>
+                        </div>
+                    </div>
+        
+                    <div class="testimonials-links">
+                            <div class="testimonials-link testimonials-link-selected" data-tab="1"><img
+                                    src="img/testimonials/picture-1.jpeg" alt=""></div>
+                            <div class="testimonials-link" data-tab="2"><img src="img/testimonials/picture-2.jpeg" alt=""></div>
+                            <div class="testimonials-link" data-tab="3"><img src="img/testimonials/picture-3.jpeg" alt=""></div>
+                            <div class="testimonials-link" data-tab="4"><img src="img/testimonials/picture-4.jpeg" alt=""></div>
+                            <div class="testimonials-link" data-tab="5"><img src="img/testimonials/picture-5.jpeg" alt=""></div>
+                            <div class="testimonials-link" data-tab="6"><img src="img/testimonials/picture-6.jpeg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container why">
+            <img src="/img/UMTS.svg" alt="">
+            <h1>The best way to share things</h1>
+            <div class="claims">
+                <div>
+                    <div>
+                        <img src="/img/illustration-1.png" alt="">
+                    </div>
+                    <h2>Search in your area</h2>
+                    <p> On UMTS you can find all the things that are offered for rent and on loan in your area. Didn't find anything? Ask your neighborhood and it's often arranged the same day!</p>
+                </div>
+    
+                <div>
+                    <div>
+                        <img src="/img/illustration-2.png" alt="">
+                    </div>
+                    <h2>Send a Request</h2>
+                    <p>If you found what you were looking for, send a message to the owner with your request to borrow or rent his/her/their item!</p>
+                </div>
+    
+                <div>
+                    <div>
+                        <img src="/img/illustration-3.png" alt="">
+                    </div>
+                    <h2>Confirm the transaction</h2>
+                    <p>Discuss the details (such as the start and end dates) and make a proposal. You pay by direct debit
+                        and only if the deal goes ahead.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="press">
+            <div class="container">
+                <h2>As seen on</h2>
+                <div class="logos">
+                    <div><img src="/img/landing-page/bbc.png" alt=""></div>
+                    <div><img src="/img/landing-page/detelegraaf.png" alt=""></div>
+                    <div><img src="/img/landing-page/nos.png" alt=""></div>
+                    <div><img src="/img/landing-page/nytimes.png" alt=""></div>
+                    <div><img src="/img/landing-page/tnw.png" alt=""></div>
+                    <div><img src="/img/landing-page/wired.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="links">
+                <div id="about">
+                    <h2>About UMTS</h2>
+                    <ul>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="#">Sign in</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Product Search</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div id="contact">
+                    <h2>Contact</h2>
+                    <p>UMTS Ltd <br> VAT: 54846458554525</p>
+                    <ul>
+                        <li><a href="mailto:contact@umts.com">contact@umts.com</a></li>
+                    </ul>
+                </div>
+    
+                <div id="more">
+                    <h2>Find out what you can get</h2>
+                    <ul>
+                        <li><a href="#">Studios in your city</a></li>
+                        <li><a href="#">Sound Mixers in your city</a></li>
+                        <li><a href="#">Robots in your city</a></li>
+                        <li><a href="#">Lights in your city</a></li>
+                        <li><a href="#">Pro Headphones your city</a></li>
+                    </ul>
+                </div>
+    
+                <div id="social">
+                    <h2>Follow UMTS</h2>
+                    <img src="/img/social.svg" alt="">
+                </div>
+            </div>
+    
+            <div class="copyright">
+                <div>
+                    <img src="/img/UMTS-White.svg" alt="">
+                </div>
+                <div>
+                    <p>Copyright © 2019 UMTS</p>
+                    <p>All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

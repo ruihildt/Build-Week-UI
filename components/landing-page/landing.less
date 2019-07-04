@@ -1,0 +1,292 @@
+// IN ALL CAPS: GENERAL STYLE
+
+// BUTTON
+.button a {
+    background-color: @blue7;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    border: solid 0.2rem rgba(0, 0, 0, 0);
+    color: @light-primary;
+    font-weight: 600;
+    
+    &:hover {
+        background-color: @blue8;
+        border: solid 0.2rem @blue8;
+    }
+}
+
+// SECTION
+section {
+    // Section title style
+    & > h2 {
+        margin: 5rem 0 2.5rem 0;
+        text-align: center;
+    }
+
+    & > h1 {
+        margin: 5rem 0 2.5rem 0;
+        text-align: center;
+    }
+}
+
+// More section
+.more {
+    padding: 0 0 5rem 0; 
+
+    .tag {
+        display: inline-flex;
+        flex-flow: row wrap;
+    
+        border: 0.2rem solid @gray7;
+        border-radius: 0.4rem;
+        padding: 1rem 3rem;
+        margin-right: 1rem;
+        margin-bottom: 1.2rem;
+    
+        text-transform: capitalize;
+        font-family: @heading-font;
+        font-weight: 600;
+        color: @gray7;
+    
+        &:hover {
+            background-color: @light-primary;
+            color: @blue7;
+            border: solid 0.2rem @blue7;
+        }
+    
+    }
+} 
+
+// SHOWCASE
+
+.showcase {
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c3c3c3' fill-opacity='0.5'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 20px;
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10rem 0;
+
+        @media @mobile {
+            flex-direction: column;
+            padding:3rem;
+        }
+    }
+
+    .cta-description {
+        width:40rem;
+        background-color: @white;
+        padding:3rem;
+        border-radius: 0.5rem;
+
+        @media @mobile {
+            width: 100vw;
+            border-radius: none;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        .button {
+            margin: 2rem 0;
+            flex-basis: 100%;
+        }
+    }
+
+    .cta-illustration {
+        width: 50rem;
+        img {
+            width:100%;
+        }
+    }
+}
+
+// Join showcase
+
+.join .container{
+    @media @mobile {
+        .cta-illustration {
+            order:1;
+        }
+
+        .cta-description {
+            order: 2;
+        }
+    }
+}
+
+// App showcase
+
+.apps {
+
+    .cta-illustration {
+        order: 1;
+    }
+
+    .cta-description {
+        order: 2;
+
+        .badges {
+            display: flex;
+            justify-content: flex-start;
+
+            @media @mobile {
+                justify-content: space-around;
+            }
+        }
+        
+        img {
+            max-height: 40px;
+            margin-top: 2rem;
+            margin-right: 1rem;
+        }
+    }
+
+}
+
+// Why UTMS
+
+.why {
+    text-align: center;
+    margin: 10rem auto;
+
+    @media @mobile {
+        margin:4rem 0;
+    }
+
+    & > img {
+        width:12rem;
+    }
+
+    h1 {
+        margin:10rem 0;
+
+    @media @mobile {
+        margin: 6rem 0;
+    }
+    }
+}
+
+.claims {
+    display: flex;
+    justify-content: space-between;
+    
+    @media @mobile {
+        width:100%;
+        flex-direction: column;
+    }
+
+    & > div {
+        width: 30%;
+
+        @media @mobile {
+            width: 100%;
+            padding:0 14vw 10vw 14vw;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Press
+
+.press {
+    text-align: center;
+    background-color: @light-primary;
+    padding:10rem 0;
+
+    h2 {
+        margin-bottom: 5rem;
+    }
+
+    .logos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            padding:2rem;
+            max-width: 15rem;
+        }
+    }
+}
+
+// Footer
+
+footer {
+    background-color: @gray7;
+    color: @white;
+
+    padding:6rem 0;
+
+    @media @mobile {
+        padding: 6rem 3rem;
+    }
+
+    a, p {
+        color:@white;
+        font-size: 1.7rem;
+        font-weight:400;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+
+    @media @mobile {
+        flex-direction: column;
+
+        & > div {
+            margin-bottom: 3rem;
+        }
+    }
+
+    a:hover {
+        color:@light-secondary;
+    }
+
+    ul li{
+        margin-bottom:1rem;
+    }
+
+    h2, p {
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        color:@pink6;
+    }
+
+    #about, #contact, #social {
+        flex-basis: 1;
+    }
+
+    #more {
+        flex-basis: 2;
+    }
+
+    #social img {
+        width:15rem;
+    }
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    margin-top:4rem;
+
+    img {
+        width:10rem;
+        margin-right: 2rem;
+    }
+}
